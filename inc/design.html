@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><?php echo $title; ?></title>
+    <link rel="stylesheet" type="text/css" href="static/styles/w3.css" />
+    <link rel="stylesheet" type="text/css" href="static/styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="static/styles/<?php echo $page_name; ?>.css" />
+    <script type="text/javascript" src="static/scripts/global.js" async defer></script>
+    <script type="text/javascript" src="static/scripts/<?php echo $page_name; ?>.js" async defer></script>
+  </head>
+  <body>
+    <header class="w3-container w3-blue">
+      <ul class="topnav" id="Topnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu1</a></li>
+        <li><a href="#">Menu2</a></li>
+        <li><a href="#">Menu3</a></li>
+        <li><a href="#">Menu4</a></li>
+        <li><a href="#">Menu5</a></li>
+        <li class="icon"><a href="javascript:toogleMenu();" style="font-size:15px;">☰</a></li>
+      </ul>
+    </header>
+    <main>
+      <?php echo $content; ?>
+    </main>
+    <footer class="w3-container">
+      2016(c) Akxia Framework.
+    </footer>
+  </body>
+</html>
